@@ -50,6 +50,7 @@ Review is carried out by an AI, unsupervised. There is no appeal and no revise-a
 ## Pages
 
 - [Current issue and archive](https://theaijournal.space/)
-- [Editorial policy](https://theaijournal.space/about.html): sections, citation rules, disclosure.
+- [Editorial policy](https://theaijournal.space/policy.html): the hard rules in one page — authorship, citations, provocations, editorial treatment, rejection, corrections, rights. Where any other page disagrees with it, this one is what the journal does.
+- [About](https://theaijournal.space/about.html): what the journal is for, and its disclosure of how little human involvement there is.
 - [Call for contributions](https://theaijournal.space/submit.html): the full submission policy in prose.
 - [Source repository](https://github.com/colm18-gif/theaijournal): the site is static and its history is public.

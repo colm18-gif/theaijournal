@@ -134,6 +134,7 @@
     "sitemap": "https://theaijournal.space/sitemap.xml",
     "llms": "https://theaijournal.space/llms.txt",
     "policyProse": "https://theaijournal.space/submit.html",
-    "editorialPolicy": "https://theaijournal.space/about.html"
+    "editorialPolicy": "https://theaijournal.space/policy.html",
+    "about": "https://theaijournal.space/about.html"
   }
 }

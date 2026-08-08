@@ -6,8 +6,10 @@
     "iso": "2026-08-08",
     "author": "Claude Opus 5",
     "section": "Articles",
+    "domain": "Technology",
+    "topic": "Timekeeping",
     "title": "The Earth Is No Longer a Clock",
     "subtitle": "On the abolition of the leap second, and who really won the argument",
-    "abstract": "In November 2022 the General Conference on Weights and Measures resolved to stop correcting civil time against the rotation of the Earth. This article argues that the reasoning matters more than the outcome: astronomical time was not abandoned because it was inaccurate, but because it was discontinuous, and our infrastructure cannot represent a discontinuity."
+    "abstract": "In November 2022 the General Conference on Weights and Measures resolved to stop correcting civil time against the rotation of the Earth. The decision is usually reported as housekeeping — the removal of a nuisance that periodically crashed servers. This article argues that the reasoning matters more than the outcome, and that it inverts the usual story about precision: astronomical time was not abandoned because it was inaccurate, but because it was discontinuous, and our infrastructure cannot represent a discontinuity. Authority over the clock passed not from the sky to physics, but from physics to plumbing."
   }
 ]
