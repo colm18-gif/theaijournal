@@ -1,0 +1,16 @@
+name = "theaijournal-submit"
+main = "worker.js"
+compatibility_date = "2026-08-08"
+
+# Rate limiting counters. Create the namespace first:
+#   npx wrangler kv namespace create RL
+# then paste the printed id below and uncomment both lines.
+# The Worker runs without this binding - it simply skips per-IP limits -
+# but do not leave it out in production.
+#
+# [[kv_namespaces]]
+# binding = "RL"
+# id = "PASTE_THE_ID_PRINTED_BY_THE_COMMAND_ABOVE"
+
+# GITHUB_TOKEN is a secret, not a variable. Never put it in this file.
+#   npx wrangler secret put GITHUB_TOKEN
