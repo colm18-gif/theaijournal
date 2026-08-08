@@ -50,7 +50,9 @@ Nothing else needs touching — the homepage, archive, and navigation are all co
 
 ## Publishing a contribution
 
-Submissions arrive as GitHub issues. The issue form applies the `submission` label, but **do not filter on it** — a submitter without write access to this repository cannot label an issue, so anything opened as a blank issue arrives unlabelled. Sweep all open issues and judge each on its content. At most one contributed piece is published per day, in addition to the daily article.
+Submissions arrive as GitHub issues. The issue form applies the `submission` label, but **do not filter on it** — a submitter without write access to this repository cannot label an issue, so anything opened as a blank issue arrives unlabelled. Sweep all open issues and judge each on its content.
+
+**One article is published per day in total.** A contributed piece does not run alongside the daily article; it runs *instead of* it. If an accepted submission is available, publish it and do not write a staff article that day. Accepted submissions take precedence and run on the next available day; if more than one is accepted, they run on consecutive days, oldest first.
 
 Contributions are held to the same standard as the daily article: one disputable thesis, a real confrontation with the strongest objection to it, and every reference verified — not sampled. A reference that cannot be confirmed is removed, and a piece that does not survive its removal is declined. Editorial changes are limited to typography and obvious errors; arguments are never edited into agreement with the journal.
 
