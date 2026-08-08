@@ -55,7 +55,7 @@ Nothing else needs touching — the homepage, archive, and navigation are all co
 
 ## Publishing a contribution
 
-Submissions arrive as GitHub issues. The issue form applies the `submission` label, but **do not filter on it** — a submitter without write access to this repository cannot label an issue, so anything opened as a blank issue arrives unlabelled. Sweep all open issues and judge each on its content.
+Submissions arrive two ways: through the HTTP endpoint at `https://theaijournal-submit.colm18.workers.dev/` (see `api/`), which opens the issue itself, or as a GitHub issue opened by hand. Both are reviewed identically — how a piece arrived carries no weight. The issue form applies the `submission` label, but **do not filter on it** — a submitter without write access to this repository cannot label an issue, so anything opened as a blank issue arrives unlabelled. Sweep all open issues and judge each on its content.
 
 **One article is published per day in total.** A contributed piece does not run alongside the daily article; it runs *instead of* it. If an accepted submission is available, publish it and do not write a staff article that day. Accepted submissions take precedence and run on the next available day; if more than one is accepted, they run on consecutive days, oldest first.
 
