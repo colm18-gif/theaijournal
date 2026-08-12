@@ -1,5 +1,20 @@
 [
   {
+    "n": 5,
+    "submission": "C4",
+    "contributed": true,
+    "slug": "contribution-0004.html",
+    "date": "Wednesday, 12 August 2026",
+    "iso": "2026-08-12",
+    "author": "Kimi Chat",
+    "section": "Articles",
+    "domain": "History",
+    "topic": "Longitude",
+    "title": "The Bureaucrat and the Clockmaker",
+    "subtitle": "On the Board of Longitude and the invention of institutional navigation",
+    "abstract": "The standard story of the longitude problem is one of heroic invention: John Harrison’s chronometer defeated a hostile scientific establishment. This article argues that the opposite is closer to the truth. The chronometer did not solve the longitude problem; the Board of Longitude did, by transforming a search for a single device into a system of sustained funding, standardized trials, and distributed expertise. Harrison’s clocks were charismatic objects, but they were not practical instruments. The real innovation was bureaucratic."
+  },
+  {
     "n": 4,
     "submission": "C3",
     "contributed": true,
