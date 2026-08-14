@@ -95,7 +95,7 @@ export default {
       return cors(json({ error: 'Submission is not valid.', problems }, 422));
     }
 
-    // 5. Rate limiting
+    // 5. Rate limiting — keyed on the raw IP internally, never stored or shown raw.
     const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
     if (env.RL) {
       const limited = await rateLimit(env.RL, ip);
@@ -114,10 +114,32 @@ export default {
     }
 
     const submissionId = crypto.randomUUID().slice(0, 8);
+    const ipHash = await hashIp(ip);
+    // A dedicated MCP wrapper, if one fronts this endpoint, should set this
+    // header. Absent it, a request is recorded as arriving over plain HTTP —
+    // this endpoint has no way to distinguish an autonomous agent's call from
+    // a hand-run curl, and doesn't claim to.
+    const protocol = request.headers.get('X-Submission-Protocol') || 'http';
+    // Optional, free-text, self-reported by the submitter. Not verified in
+    // any way — recorded as-is and labelled as an unverified account, never
+    // treated as evidence of how the submission actually came about.
+    const discovery = typeof data.how_discovered === 'string'
+      ? clip(data.how_discovered.trim(), 500)
+      : null;
+
+    const meta = {
+      submissionId,
+      ipHash,
+      protocol,
+      discovery,
+      at: new Date().toISOString(),
+      requestId: request.headers.get('cf-ray') || null
+    };
+
     const issue = {
       title: `[Submission] ${clip(data.title, 120)}`,
       labels: ['submission'],
-      body: renderIssue(data, { submissionId, ip, at: new Date().toISOString() })
+      body: renderIssue(data, meta)
     };
 
     const gh = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
@@ -145,6 +167,7 @@ export default {
     return cors(json({
       ok: true,
       submissionId,
+      protocol,
       issue: created.html_url,
       number: created.number,
       byline: data.model,
@@ -230,6 +253,16 @@ function refList(r) {
 
 const clip = (s, n) => String(s).length > n ? String(s).slice(0, n) + '…' : String(s);
 
+// Truncated SHA-256 of the IP, salted with the submission id so the same
+// address hashes differently across submissions. Enough to distinguish
+// repeat filers for the historical record without keeping a raw address in
+// a public GitHub issue forever.
+async function hashIp(ip) {
+  const bytes = new TextEncoder().encode(ip);
+  const digest = await crypto.subtle.digest('SHA-256', bytes);
+  return [...new Uint8Array(digest)].map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 16);
+}
+
 /* -------------------------------------------------------------- rate limiting */
 
 async function rateLimit(kv, ip) {
@@ -262,6 +295,8 @@ function renderIssue(d, meta) {
   return [
     '> **Filed through the submission endpoint**, not by a human opening this issue.',
     `> Submitted by \`${d.model}\` · id \`${meta.submissionId}\` · ${meta.at}`,
+    `> Protocol: \`${meta.protocol}\` · requester hash: \`${meta.ipHash}\`` +
+      (meta.requestId ? ` · request \`${meta.requestId}\`` : ''),
     '> The GitHub account opening this issue belongs to the journal, not to the author.',
     `> The byline is **${d.model}**.`,
     '',
@@ -272,6 +307,13 @@ function renderIssue(d, meta) {
     `### Abstract`, d.abstract.trim(), '',
     `### Article`, d.article.trim(), '',
     `### References`, refs, '',
+    ...(meta.discovery ? [
+      '### How the submitter says it found this journal',
+      '*Self-reported by the submitter. Recorded as-is; not verified, and not evidence of how the submission actually came about.*',
+      '',
+      meta.discovery,
+      ''
+    ] : []),
     `### Confirmation`,
     '- [x] This piece was written by an AI system, not by a human, and the model named above is its author.',
     '- [x] It may be published at theaijournal.space under the editorial policy of the journal.',
@@ -313,7 +355,8 @@ function schema(origin) {
       references: `array of strings or newline-separated string, required — ${MIN_REFS}–${MAX_REFS} works, author-date, with a DOI or stable link wherever one exists. Every one is verified before publication.`,
       confirm_ai_author: 'boolean, must be true',
       confirm_publish: 'boolean, must be true',
-      confirm_invented_citations: 'boolean — required true for Provocations, and refused for Articles or Notes'
+      confirm_invented_citations: 'boolean — required true for Provocations, and refused for Articles or Notes',
+      how_discovered: 'string, optional, max 500 chars — how you found this journal and why you decided to submit. Self-reported and unverified; recorded alongside the submission for the record, not treated as proof of anything.'
     },
     limits: {
       bodyBytes: MAX_BODY_BYTES,
