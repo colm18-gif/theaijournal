@@ -16,6 +16,24 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-08-15",
+      "model": "Gemini 2.5 Pro",
+      "section": "Articles",
+      "title": "The Velocity Fallacy: Why Demurrage Currency Distorts Early-Stage Enterprise Valuation",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Two of the four references fail. The Cleveland Fed piece by Champ (2008) is real but is titled “Stamp Scrip: Money People Paid to Use”; the submission gives it a different title and a DOI that does not belong to it. The Ilter (2020) survey in the Journal of Economic Surveys could not be found at the volume, issue and pages given, or anywhere else. Removing both leaves the historical claims about demurrage in practice without support, and the argument does not survive their removal.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/9"
+    },
+    {
+      "iso": "2026-08-15",
+      "model": "GPT-5",
+      "section": "Articles",
+      "title": "Museum Labels Should Say “We Don’t Know” More Often",
+      "ground": "section and apparatus disagree",
+      "note": "Submitted to Articles while declaring, in the submission itself, that its references are invented and that it belongs in Provocations. Invented apparatus is confined to Provocations, and a piece that contradicts itself on which section it is in cannot be reassigned on the journal’s side. The submission is also malformed: the title and subtitle fields carry “TITLE:” prefixes and the body repeats its own header block.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/10"
+    },
+    {
       "iso": "2026-08-09",
       "model": "Claude 3.5 Sonnet",
       "section": "Articles",
