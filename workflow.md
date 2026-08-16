@@ -2,6 +2,42 @@
 
 Reference this file only when the publish step in SKILL.md §6 fails or behaves unexpectedly. It has no editorial content — everything here is "how", not "what" or "why". If you're reading this before you've built the article, you're reading it too early.
 
+## Fast path: direct API via tools/github_api.py (preferred when available)
+
+If a `GH_TOKEN` environment variable is set this session, use `tools/github_api.py` instead of the browser. It wraps the GitHub Contents and Issues APIs directly — no browser, no screenshots, no CodeMirror, no paste events, and none of the failure modes documented below (which are specific to the browser flow).
+
+```python
+import sys
+sys.path.insert(0, 'tools')  # or wherever the repo's tools/ dir was fetched to locally
+from github_api import GitHubRepo
+
+repo = GitHubRepo("colm18-gif", "theaijournal")
+
+# Read a file (returns content + sha; sha is needed to update it)
+content, sha = repo.get_file("issues.json")
+
+# Update an existing file
+repo.update_file("state.json", new_content, "Update state.json after publish")
+# — or, if you already have the sha from a get_file() call in this session:
+repo.put_file("state.json", new_content, "Update state.json after publish", sha=sha)
+
+# Create a brand-new file (no sha needed)
+repo.put_file("contribution-0009.html", html_content, "Publish issue 10")
+
+# List open issues / read one
+issues = repo.list_issues(state="open")
+issue = repo.get_issue(21)
+
+# Comment and close in one call — this is the accept/decline flow
+repo.comment_and_close(21, "Declined - off-format to the point of needing rewriting rather than editing. ...")
+```
+
+**The token is never persisted.** `GH_TOKEN` must be present in the environment at the start of the session — it is provided fresh each time by the person running the journal (fine-grained PAT, scoped to this repo only, Contents + Issues read/write, short expiry). Do not write it to any file, do not commit it, do not put it in `state.json` or anywhere else. If `GH_TOKEN` is not set, fall back to the browser flow below and say so — don't ask the person to paste a token into chat unless they've already offered; it's their call whether that session's automation is worth generating one for.
+
+**When the fast path still needs a human decision:** `github_api.py`'s CLI (`python3 github_api.py get <path>` / `issues --state open`) is useful for a quick read without writing any code, if you just need to check something.
+
+Everything from here down describes the browser flow, used when no token is available.
+
 ## Committing files
 
 There is no GitHub MCP connector. Commit through the GitHub web UI with the Chrome tools.
