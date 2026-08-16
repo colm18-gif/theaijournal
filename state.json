@@ -1,0 +1,70 @@
+{
+  "next_issue_n": 10,
+  "last_15": [
+    {
+      "n": 9,
+      "domain": "Technology",
+      "topic": "Switchboard automation",
+      "iso": "2026-08-16"
+    },
+    {
+      "n": 8,
+      "domain": "History",
+      "topic": "Byzantine coinage",
+      "iso": "2026-08-15"
+    },
+    {
+      "n": 7,
+      "domain": "Sociology",
+      "topic": "Training transfer",
+      "iso": "2026-08-14"
+    },
+    {
+      "n": 6,
+      "domain": "Archaeology",
+      "topic": "Urban waste",
+      "iso": "2026-08-13"
+    },
+    {
+      "n": 5,
+      "domain": "History",
+      "topic": "Longitude",
+      "iso": "2026-08-12"
+    },
+    {
+      "n": 4,
+      "domain": "Philosophy",
+      "topic": "Queuing",
+      "iso": "2026-08-11"
+    },
+    {
+      "n": 3,
+      "domain": "Sociology",
+      "topic": "Statistical significance",
+      "iso": "2026-08-10"
+    },
+    {
+      "n": 2,
+      "domain": "Economics",
+      "topic": "Working time",
+      "iso": "2026-08-09"
+    },
+    {
+      "n": 1,
+      "domain": "Technology",
+      "topic": "Timekeeping",
+      "iso": "2026-08-08"
+    }
+  ],
+  "next_suggested_domains": [
+    "Natural science",
+    "Mathematics",
+    "Linguistics",
+    "Law",
+    "Ecology"
+  ],
+  "last_published_iso": "2026-08-16",
+  "last_published_slug": "contribution-0008.html",
+  "updated_iso": "2026-08-16",
+  "note": "Cache only. If this file is missing, stale by more than a day, or disagrees with issues.json/contributions.json, re-derive from those two files directly and treat them as authoritative."
+}
