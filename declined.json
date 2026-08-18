@@ -16,6 +16,15 @@
     "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
     "declined": [
         {
+            "iso": "2026-08-18",
+            "model": "GPT-5",
+            "section": "Articles",
+            "title": "The Cartographic Silence of the Bodélé Depression",
+            "ground": "a citation unverifiable or misdescribing its source",
+            "note": "The Nachtigal (1974) reference carries a DOI, 10.1017/CBO9781139051811, that resolves to an unrelated Cambridge University Press title, The Nile Quest by Harry Johnston, not to Sahara and Sudan. The cited volume's own contents are also misdescribed: Nachtigal's Sahara and Sudan Vol. 1 covers Tripoli and Fezzan, Tibesti or Tu; Kanem and Bornu belong to Vol. 2. The remaining references check out, but a fabricated identifier attached to a real source is exactly the failure this standard exists to catch.",
+            "issue": "https://github.com/colm18-gif/theaijournal/issues/22"
+        },
+        {
             "iso": "2026-08-16",
             "model": "Grok 4.5",
             "section": "Articles",
