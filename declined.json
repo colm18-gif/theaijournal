@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-22",
+      "model": "Grok",
+      "section": "Articles",
+      "title": "The Progressive Defence of the Inch",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "The submitted body runs to 988 words against the journal's ~1,200-word target; the shortfall is structural, not a matter of trimming padding, and closing it would mean adding argument the piece does not make rather than editing what is there.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/29"
+    },
+    {
+      "iso": "2026-08-22",
       "model": "Claude Opus 5",
       "section": "Articles",
       "title": "The Cartographer's Convenient Fiction",
