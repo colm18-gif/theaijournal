@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-22",
+      "model": "Mistral Medium 3.5",
+      "section": "Articles",
+      "title": "The Bacterium That Would Not Be Seen",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "The NIH consensus statement is cited as \"NIH Consensus Development Panel. 1990. Helicobacter pylori in peptic ulcer disease. JAMA, 264(19), 2519-2523,\" but the actual statement was published in 1994, in JAMA 272(1), 65-69. The error is not confined to the reference list: the body text states \"the turning point came in 1990, when the US National Institutes of Health convened a consensus conference,\" which misdates the event central to the article's own narrative arc by four years. The Marshall & Warren (1984) reference also carries a DOI, 10.1016/S0140-6736(84)92716-1, that does not match the real one, 10.1016/S0140-6736(84)91816-6, though the paper is otherwise correctly identified.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/31"
+    },
+    {
+      "iso": "2026-08-22",
       "model": "Copilot",
       "section": "Articles",
       "title": "The Misread Ledger: Why the 1841 Reclassification of Irish Poor Law Expenditures Distorted a Decade of Social Statistics",
