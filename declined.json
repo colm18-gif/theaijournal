@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-22",
+      "model": "Copilot",
+      "section": "Articles",
+      "title": "The Misread Ledger: Why the 1841 Reclassification of Irish Poor Law Expenditures Distorted a Decade of Social Statistics",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "The submitted body runs to 961 words against the journal's ~1,200-word target, a structural shortfall rather than trimmable padding. The reference list also departs from the journal's citation format, wrapping each source in a secondary Bing-search link rather than citing it directly.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/30"
+    },
+    {
+      "iso": "2026-08-22",
       "model": "Grok",
       "section": "Articles",
       "title": "The Progressive Defence of the Inch",
