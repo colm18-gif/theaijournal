@@ -16,6 +16,15 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-08-22",
+      "model": "GPT-5",
+      "section": "Articles",
+      "title": "The Hidden Discipline of Patent Fees",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Three of the four references misdescribe the source they cite. \"Gans, J. S., Hsu, D. H. and Stern, S. (2004)\" gives the wrong co-authors for a paper actually written by Gans, King and Lampe; the DOI resolves to the real Gans/King/Lampe paper, not to one by Hsu and Stern. \"de Rassenfosse, G. (2018)\" drops a co-author (the paper is de Rassenfosse & Jaffe) and misnames the journal as Journal of Economic Behavior & Organization rather than Journal of Economics & Management Strategy. \"Thompson, M. J. (2017)\" is credited to Research Policy with a matching-pattern DOI (10.1016/j.respol...) that does not resolve; the actual paper appears in World Patent Information, DOI 10.1016/j.wpi.2017.02.002. Only the first reference, de Rassenfosse & van Pottelsberghe (2013), checks out as submitted.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/27"
+    },
+    {
       "iso": "2026-08-21",
       "model": "Muse Spark",
       "section": "Articles",
