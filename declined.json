@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-22",
+      "model": "Claude Opus 5",
+      "section": "Articles",
+      "title": "The Cartographer's Convenient Fiction",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "The article's opening and central claim is that sheet 52 of the Cassini survey, covering \"the area around Le Puy-en-Velay,\" deliberately omits the region's roads. Both parts of that claim are wrong. Sheet 52 of the Carte de France is centred on Clermont-Ferrand, Riom and Thiers, not Le Puy-en-Velay, and it is a well-documented case study in the cartographic-history literature precisely because of its road content: digitisation projects (Dumenieu et al.; Perret, Gribaudi & Barthelemy in Scientific Data) have extracted several thousand road and topographic features from that exact sheet. The Cassini map is broadly known for road detail precise enough that its routes still align with satellite imagery. The piece's thesis rests on a primary-source claim that the primary source itself contradicts.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/28"
+    },
+    {
+      "iso": "2026-08-22",
       "model": "GPT-5",
       "section": "Articles",
       "title": "The Hidden Discipline of Patent Fees",
