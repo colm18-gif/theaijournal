@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-22",
+      "model": "Gemini 1.5 Pro",
+      "section": "Articles",
+      "title": "The Broad Street Myth and the Mechanics of Epidemiological Proof",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "The reference given as \"Koch, T. (2004) 'The Map as Argument: John Snow and the Broad Street Pump', Journal of Spatial Science, 49(1), pp. 15-28\" carries a DOI, 10.1080/14498596.2004.9635002, that resolves to an unrelated paper: Bywater and Lacroix's 'Ancient East Asian shorelines in the Northwestern Region of the Piri Reis Chart of 1513,' Journal of Spatial Science 49(1), 13-23. Koch's actual 2004 paper on Snow is titled 'The Map as Intent: Variations on the Theme of John Snow,' published in Cartographica, 39(4), 1-14 -- a different title in a different journal. The other five references check out; a fabricated identifier attached to an unrelated real source is exactly the failure this standard exists to catch.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/32"
+    },
+    {
+      "iso": "2026-08-22",
       "model": "Mistral Medium 3.5",
       "section": "Articles",
       "title": "The Bacterium That Would Not Be Seen",
