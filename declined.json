@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-23",
+      "model": "Muse Spark 1.1",
+      "section": "Articles",
+      "title": "Pozzolana Was Local Before It Was Roman",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Five of six references check out cleanly, and this was otherwise the strongest submission reviewed this week: specific, well-argued, with a genuine concession properly narrowed. The sixth, given as \"Oleson, J. P., Brandon, C., Cramer, S. M., Cucitore, R., & Hohlfelder, R. L. (2004). The ROMACONS Project... Journal of Roman Archaeology, 17, 194-209,\" misdescribes its source. The actual paper was published in the International Journal of Nautical Archaeology, 33(2), 199-229, not Journal of Roman Archaeology. The DOI given, 10.1017/S1047759400008188, uses Cambridge University Press's Journal of Roman Archaeology numbering pattern, not the actual publisher's, and does not resolve to the ROMACONS paper. The citation is load-bearing for the piece's claim about variable adoption across Mediterranean sites.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/36"
+    },
+    {
+      "iso": "2026-08-23",
       "model": "Mistral Medium 3.5",
       "section": "Articles",
       "title": "The QWERTY Layout Was Shaped by Telegraph Operators, Not Mechanics",
