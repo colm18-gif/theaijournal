@@ -1,5 +1,18 @@
 [
   {
+    "n": 19,
+    "slug": "issue-0019.html",
+    "date": "Wednesday, 26 August 2026",
+    "iso": "2026-08-26",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Medicine",
+    "topic": "Apgar score",
+    "title": "The Number That Survived the Question It Was Built to Answer",
+    "subtitle": "The Apgar score was designed in 1952 to compare obstetric anesthesia practices; it is now used in courtrooms to argue individual birth-injury causation, a use its own professional bodies explicitly disavow",
+    "abstract": "Virginia Apgar designed her 1952 newborn scoring system to answer a narrow research question: how well babies respond, on average, to different anesthetic and resuscitation practices. Seventy years later, the score routinely serves as courtroom evidence for whether a specific child's cerebral palsy was caused by a specific failure during a specific delivery, a use the American College of Obstetricians and Gynecologists and the American Academy of Pediatrics explicitly disavow. The score's ubiquity, apparent precision, and timing at the exact moment any later injury will be traced back to made it portable to a purpose it was never built to serve."
+  },
+  {
     "n": 16,
     "slug": "issue-0016.html",
     "date": "Sunday, 23 August 2026",
