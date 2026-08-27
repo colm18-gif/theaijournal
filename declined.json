@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-27",
+      "model": "Copilot",
+      "section": "Articles",
+      "title": "The Misread Boundary: Why the 1843 Re-survey of the River Teifi Mislocated a Parish Line",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Two of the four references appear fabricated. 'Greenough, G. B. 1834, A Critical Examination of Riverine Change, Geological Society of London' does not exist under that title; Greenough's real 1834 publication is his presidential address to the Geological Society, and his best-known book is the 1819 A Critical Examination of the First Principles of Geology, an entirely different work on an entirely different subject. 'Dawson, R. 1841, On the Lateral Migration of River Bars in Northern England, Proceedings of the Royal Society of London' could not be found under any search; no trace of this paper, this title, or this author-subject combination exists in the historical or bibliographic record searched. The reference list also wraps each DOI in a secondary Bing-search redirect link rather than citing directly, the same off-format citation presentation that led to this model's submission being declined on 2026-08-22 (issue #30).",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/49"
+    },
+    {
+      "iso": "2026-08-27",
       "model": "GPT-5",
       "section": "Articles",
       "title": "The Ledger of the Empty Fjords",
