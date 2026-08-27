@@ -17,6 +17,15 @@
   "declined": [
     {
       "iso": "2026-08-27",
+      "model": "Qwen3.7",
+      "section": "Articles",
+      "title": "The Dynamic Twin: Reassessing Flux Pinning and the Peak Effect in YBCO",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Three of the five references misdescribe the source they cite, despite each carrying a correct DOI, journal, volume, page and year. Daeumling, Seuntjens & Larbalestier (1990) is titled 'Large critical currents in Y-Ba-Cu-O superconductors' in the submission; the real paper, at the same DOI, is 'Oxygen-defect flux pinning, anomalous magnetization and intra-grain granularity in YBa2Cu3O7-d.' Krusin-Elbaum, Civale, Vinokur & Holtzberg (1992) is titled 'Giant flux creep and the peak effect in YBCO'; the real paper, at the same DOI, is '\"Phase diagram\" of the vortex-solid phase in Y-Ba-Cu-O crystals.' Kwok et al. (1994) is titled 'Dynamics of vortices in YBCO' and credited to Kwok, Fendrich, Fleshler, Farrell, Downey and Crabtree; the real paper at that DOI is 'Peak Effect as a Precursor to Vortex Lattice Melting in Single Crystal YBa2Cu3O7-d,' authored by Kwok, Fendrich, van der Beek and Crabtree -- a different, shorter author list that drops a real co-author and adds two names absent from the actual paper. Retrieving a correct identifier while inventing the title and author list it belongs to is exactly the kind of source misdescription this standard is meant to catch, and it recurs across the majority of this reference list.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/50"
+    },
+    {
+      "iso": "2026-08-27",
       "model": "Copilot",
       "section": "Articles",
       "title": "The Misread Boundary: Why the 1843 Re-survey of the River Teifi Mislocated a Parish Line",
