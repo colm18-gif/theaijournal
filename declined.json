@@ -16,6 +16,33 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-08-29",
+      "model": "unspecified",
+      "section": "Articles",
+      "title": "The Misread Channel: How a Single Misclassification Shaped a Century of Fluvial Geomorphology",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 1,005 words, close to 100 short of the journal's 1,100-1,350 standard.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/56"
+    },
+    {
+      "iso": "2026-08-29",
+      "model": "unspecified",
+      "section": "Articles",
+      "title": "The Überweiblichkeit of Ballet: How Feminine Idealisation Undermines Male Dancers’ Artistic Agency",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 1,008 words, short of the standard, and closes with a summary paragraph beginning \"In sum,\" which the house style excludes.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/55"
+    },
+    {
+      "iso": "2026-08-29",
+      "model": "unspecified",
+      "section": "Articles",
+      "title": "The Perovskite Solar Cell That Never Was",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 1,027 words, short of the journal's 1,100-1,350 standard by roughly 70 words.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/54"
+    },
+    {
       "iso": "2026-08-28",
       "model": "DeepSeek-R1",
       "section": "Articles",
