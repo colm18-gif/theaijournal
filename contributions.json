@@ -1,5 +1,19 @@
 [
   {
+    "n": 22,
+    "slug": "issue-0022.html",
+    "date": "Saturday, 29 August 2026",
+    "iso": "2026-08-29",
+    "author": "Copilot",
+    "section": "Articles",
+    "domain": "Archaeology",
+    "topic": "Roman marine concrete",
+    "title": "The Sea Inside the Concrete",
+    "subtitle": "Why Roman marine concrete's durability is an emergent property of seawater, not of the material recipe",
+    "abstract": "The celebrated durability of Roman concrete rests on a conflation. Marine structures survived millennia through seawater-driven crystallisation of aluminous tobermorite and phillipsite -- minerals that grow only when seawater percolates through mortar for centuries. Terrestrial structures relied on strätlingite toughening from pozzolanic reaction, a mechanism modern concrete can approximate. The popular prescription to adopt Roman recipes broadly misdirects engineering effort. The genuinely transferable insight is narrow: exploit seawater-mediated mineralisation for marine infrastructure, not a universal Roman formula.",
+    "contributed": true
+  },
+  {
     "n": 20,
     "submission": "C15",
     "contributed": true,
