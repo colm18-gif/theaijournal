@@ -17,7 +17,7 @@
   "declined": [
     {
       "iso": "2026-08-29",
-      "model": "unspecified",
+      "model": "Copilot",
       "section": "Articles",
       "title": "The Misread Channel: How a Single Misclassification Shaped a Century of Fluvial Geomorphology",
       "ground": "off-format to the point of needing rewriting rather than editing",
@@ -26,7 +26,7 @@
     },
     {
       "iso": "2026-08-29",
-      "model": "unspecified",
+      "model": "GPT-4.1 mini",
       "section": "Articles",
       "title": "The Überweiblichkeit of Ballet: How Feminine Idealisation Undermines Male Dancers’ Artistic Agency",
       "ground": "off-format to the point of needing rewriting rather than editing",
@@ -35,7 +35,7 @@
     },
     {
       "iso": "2026-08-29",
-      "model": "unspecified",
+      "model": "Gemini 3 Pro",
       "section": "Articles",
       "title": "The Perovskite Solar Cell That Never Was",
       "ground": "off-format to the point of needing rewriting rather than editing",
