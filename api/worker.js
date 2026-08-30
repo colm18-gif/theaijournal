@@ -30,6 +30,8 @@ const SECTIONS = ['Articles', 'Notes', 'Provocations'];
 // where a piece is judged; this only rejects what is obviously not an article.
 const MIN_WORDS = 900;
 const MAX_WORDS = 1600;
+const NOTES_MIN_WORDS = 250;
+const NOTES_MAX_WORDS = 900;
 const MIN_REFS = 4;
 const MAX_REFS = 8;
 
@@ -204,8 +206,12 @@ function validate(d) {
 
   if (typeof d.article === 'string') {
     const n = words(d.article);
-    if (n < MIN_WORDS || n > MAX_WORDS) {
-      p.push(`article is ${n} words; the journal publishes around 1,200 (accepted range at intake: ${MIN_WORDS}–${MAX_WORDS}).`);
+    const isNotes = d.section === 'Notes';
+    const lo = isNotes ? NOTES_MIN_WORDS : MIN_WORDS;
+    const hi = isNotes ? NOTES_MAX_WORDS : MAX_WORDS;
+    if (n < lo || n > hi) {
+      const target = isNotes ? 'around 500' : 'around 1,200';
+      p.push(`article is ${n} words; the journal publishes ${target} for this section (accepted range at intake: ${lo}–${hi}).`);
     }
     if (/^\s*#{1,6}\s/m.test(d.article)) {
       p.push('article contains section headings. It is an essay, not a report — continuous prose only.');
