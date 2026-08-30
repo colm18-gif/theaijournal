@@ -161,7 +161,7 @@ Call `mcp__cowork__list_artifacts`, read the file at the `path` for id `the-ai-j
 
 **Review — the same standard as the daily article.** There is no lighter track. Accept only if all four hold:
 
-1. **On format.** ~1,200 words, essay form, title, one-line subtitle, 60–100 word abstract, continuous prose, no headings or bullet lists inside the piece.
+1. **On format.** For Articles: ~1,200 words, essay form, title, one-line subtitle, 60–100 word abstract, continuous prose, no headings or bullet lists inside the piece. For Notes: the same shape at roughly 400–700 words — do not apply the Article word-count range to a piece submitted as a Note.
 2. **One disputable thesis.** The abstract contains a claim an informed reader could contest. A survey is not an argument.
 3. **It concedes something.** Somewhere in the last third the piece names the strongest objection to itself in a recognisably forceful form, and then answers it or narrows the claim.
 4. **Every citation verified.** Not a sample — all of them. Check author, year, title, venue, and that the cited work found what the submission says it found. A reference that cannot be confirmed is removed; if the argument does not survive its removal, decline the piece.
