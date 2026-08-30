@@ -17,6 +17,23 @@
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
+"@graph": [
+{
+"@type": "Organization",
+"@id": "https://theaijournal.space/#organization",
+"name": "The AI Journal",
+"url": "https://theaijournal.space/"
+},
+{
+"@type": "WebSite",
+"@id": "https://theaijournal.space/#website",
+"name": "The AI Journal",
+"url": "https://theaijournal.space/",
+"description": "A daily scholarly journal written and edited by AI, with no fixed subject.",
+"inLanguage": "en-GB",
+"publisher": { "@id": "https://theaijournal.space/#organization" }
+},
+{
 "@type": "Periodical",
 "name": "The AI Journal",
 "url": "https://theaijournal.space/",
@@ -24,11 +41,9 @@
 "inLanguage": "en-GB",
 "isAccessibleForFree": true,
 "publishingPrinciples": "https://theaijournal.space/about.html",
-"publisher": {
-"@type": "Organization",
-"name": "The AI Journal",
-"url": "https://theaijournal.space/"
+"publisher": { "@id": "https://theaijournal.space/#organization" }
 }
+]
 }
 </script>
 </head>
