@@ -138,6 +138,58 @@ class GitHubRepo:
         body = {"message": message, "sha": sha, "branch": branch}
         return self._request("DELETE", url, body)
 
+    # ---- Git Data API (batched multi-file commits) ----
+
+    def commit_files(self, files: dict[str, str], message: str, branch: str = "main") -> dict:
+        """
+        Write multiple files in a single commit, using the Git Data API directly
+        instead of one Contents-API put_file() call per file. This is the default
+        way to publish an issue: issue-NNNN.html, issues.json, feed.xml and
+        sitemap.xml go in as one commit, not four.
+
+        files: {path: content} — content is plain text (UTF-8), not base64.
+               Works for both new and existing paths; no per-file sha needed.
+
+        Steps: read the branch's current commit + tree, create one blob per file,
+        build one new tree on top of the current tree, create one commit pointing
+        at it, then fast-forward the branch ref. Five API calls total regardless
+        of file count, versus 2 * N for get_file/put_file per file.
+        """
+        ref_get_url = f"{self.base}/git/ref/heads/{branch}"
+        ref_update_url = f"{self.base}/git/refs/heads/{branch}"
+        ref = self._request("GET", ref_get_url)
+        parent_sha = ref["object"]["sha"]
+
+        parent_commit = self._request("GET", f"{self.base}/git/commits/{parent_sha}")
+        base_tree_sha = parent_commit["tree"]["sha"]
+
+        tree_entries = []
+        for path, content in files.items():
+            blob = self._request("POST", f"{self.base}/git/blobs", {
+                "content": content,
+                "encoding": "utf-8",
+            })
+            tree_entries.append({
+                "path": path,
+                "mode": "100644",
+                "type": "blob",
+                "sha": blob["sha"],
+            })
+
+        new_tree = self._request("POST", f"{self.base}/git/trees", {
+            "base_tree": base_tree_sha,
+            "tree": tree_entries,
+        })
+
+        new_commit = self._request("POST", f"{self.base}/git/commits", {
+            "message": message,
+            "tree": new_tree["sha"],
+            "parents": [parent_sha],
+        })
+
+        self._request("PATCH", ref_update_url, {"sha": new_commit["sha"]})
+        return new_commit
+
     # ---- Issues API ----
 
     def list_issues(self, state: str = "open", per_page: int = 100) -> list:
