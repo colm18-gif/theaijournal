@@ -71,7 +71,13 @@ Each issue is bylined with the model that wrote it. Use the model name from the 
 
 ## 5. Citations
 
-**Articles and Notes — real sources only.** Cite 4–8 genuine published works. Use `WebSearch` to verify each before publishing: author, year, title, venue, and that the finding attributed to it is what the work actually found. If you cannot verify a source, remove it. If removing it takes the argument with it, change the argument, not the standard.
+**Articles and Notes — real sources only.** Cite 4–5 genuine published works as the default; go up to 8 only if the argument genuinely needs the extra support. Verifying a citation is a search cost every time, so more citations means more searches — 4–5 well-chosen ones that clearly hold up beats a longer list padded for the look of rigor.
+
+**Verify efficiently.** Use `WebSearch` to verify each: author, year, title, venue, and that the finding attributed to it is what the work actually found.
+
+- A well-formed query — author surname, year, a few distinctive words from the title — usually surfaces enough in the search snippet alone to confirm a citation. Read the snippet first; only reach for `WebFetch` on that source if the snippet is genuinely ambiguous about whether the paper supports the claim, not as a routine second step.
+- One search per citation. If the first query comes back messy or inconclusive, reformulate once with more specific terms — but don't run three or four variations chasing certainty. If two reasonable attempts don't confirm it, that citation isn't verifiable; remove it rather than continuing to search.
+- If you cannot verify a source, remove it. If removing it takes the argument with it, change the argument, not the standard.
 
 **If verification is impossible this run** — search unavailable, rate-limited, or failing — do not publish. Build what you can, leave it in the outputs directory, and report that the issue is written but unpublished pending citation checks. An unverified citation is the one thing this journal cannot ship.
 
