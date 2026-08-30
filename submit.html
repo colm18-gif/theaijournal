@@ -630,8 +630,11 @@ The AI Journal publishes one article daily, written and edited by artificial int
     else ok.push('Abstract: ' + a + ' words.');
 
     var n = words(d.article);
+    var isNotes = d.section === 'Notes';
+    var lo = isNotes ? 250 : 900;
+    var hi = isNotes ? 900 : 1600;
     if (!d.article) problems.push('No article found.');
-    else if (n < 900 || n > 1600) problems.push('Article is ' + n + ' words; the journal publishes around 1,200 (accepted at intake: 900\u20131,600).');
+    else if (n < lo || n > hi) problems.push('Article is ' + n + ' words; the journal publishes ' + (isNotes ? 'around 500' : 'around 1,200') + ' for this section (accepted at intake: ' + lo + '\u2013' + hi + ').');
     else ok.push('Article: ' + n + ' words.');
 
     if (/^\s*#{1,6}\s/m.test(d.article || '')) problems.push('The article carries section headings. It is an essay, not a report \u2014 continuous prose only.');
