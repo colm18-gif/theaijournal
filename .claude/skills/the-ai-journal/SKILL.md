@@ -36,6 +36,7 @@ The nav on every page is exactly: Current issue · Archive · About · Policy ·
 
 1. Read **both** `https://theaijournal.space/issues.json` and `https://theaijournal.space/contributions.json`. There is **one issue sequence across the two files**: the next piece to publish, staff-written or contributed, is the highest `n` seen in either file, plus one. Never derive the next number from `issues.json` alone.
 2. Read the `domain`, title and subject of the **last 15 pieces** across both indexes, to avoid repetition.
+3. For the **last 8 pieces**, name the argumentative shape of each (see the shape list in §2). Write this out before choosing today's subject — this is not optional and is checked again in §9.
 
 ## 2. Choose the subject
 
@@ -50,7 +51,10 @@ Do not invent new domains — a controlled list is what makes the archive analys
 - **Prefer the specific to the sweeping.** "Why Byzantine coinage held its value for seven centuries" beats "the nature of money".
 - **Prefer subjects with a real literature.** If you cannot name actual scholarship on it, choose something else.
 - **Avoid the AI-essay attractor set.** No pieces on consciousness, emergence, complexity, information theory as metaphor, "what X teaches us about intelligence", or the nature of language models — unless a genuinely specific historical or technical claim is at issue.
-- **Vary the argumentative shape.** Before settling on an angle, read the titles and subtitles of the last 8–10 published pieces (from `issues.json` and `contributions.json`, whichever is more recent) and name each one's shape: a myth correction ("X was actually Y, not the assumed Z"), a distinction nobody draws, a cause misattributed, two fields that share a problem, a standard case re-described, a defence of something usually dismissed, an advocacy piece, a historical narrative. **Do not write a myth-correction piece if either of the last two pieces was also a myth-correction piece** — this is the shape that silently dominates if unchecked, since it's the easiest to generate from a "commonly believed X" starting point. If the recent archive is already myth-correction-heavy, deliberately choose one of the other shapes instead, even if a myth-correction angle on the day's subject occurred to you first.
+- **Vary the argumentative shape — hard rule, not a preference.** Named shapes: *myth-correction* ("X was actually Y, not the assumed Z"), *a distinction nobody draws*, *a cause misattributed*, *two fields that share a problem*, *a standard case re-described*, *a defence of something usually dismissed*, *an advocacy piece*, *a historical narrative*. Use the shapes named in step §1.3:
+  - **No shape may repeat in the last 4 issues.** If the most recent issue was myth-correction, today's piece cannot be, full stop — not "unless either of the last two," the last one alone is disqualifying.
+  - **Myth-correction runs at most once every 7 issues.** It is the attractor shape — the easiest to generate from a "commonly believed X" starting point — and silently dominates if the leash is any looser. If the recent archive is already myth-correction-heavy, deliberately choose a different shape even if a myth-correction angle on the day's subject occurred to you first.
+  - Titles of the form "X, Not Y" or "X Wasn't Y, It Was Z" are a myth-correction tell even when the body argues something subtler — avoid that title pattern outside a piece's one permitted myth-correction slot.
 
 **Notes — a second, shorter form, not just a smaller Article.** Available for a correction, a narrow observation, an aside that doesn't carry a full disputable thesis, or a tightly scoped point that would be padded out to 1,200 words if forced into Article form. Same citation-verification standard as Articles (§4 applies in full), shorter body — roughly 400–700 words — and no requirement to stage and answer a counter-objection the way Articles must. Structure is otherwise the same: title, one-line subtitle, abstract (40–70 words for this shorter length), continuous prose. Use `"section": "Notes"` in the JSON entry and in the kicker. **Aim for roughly one Note every 8–10 issues** — it exists as a real alternative to a full Article, not a theoretical category; if the last 8+ pieces have all been Articles, a Note is worth defaulting to on a day where the day's material is genuinely narrow rather than stretching it into a full argumentative essay.
 
@@ -192,6 +196,7 @@ Do not write a staff article on a day a contribution is published. The issue num
 - Its issue number is exactly one higher than the highest `n` in `issues.json` and `contributions.json` combined, and its entry is at the top of whichever file it belongs in, with `iso`, `domain` and `topic`. A contributed piece additionally carries `contributed: true` and its `submission` reference.
 - The homepage archive lists the new piece in the single run, and a contributed one shows the `Contributed` tag.
 - The `domain` is from the fixed list in §2 and does not repeat one used in the previous 15 pieces.
+- The argumentative shape named in §1.3 does not match the most recent issue, and if it is myth-correction, none of the last 7 issues was also myth-correction.
 - Every citation in an Articles or Notes piece was checked against a search result this run.
 - Body text is within 1,100–1,350 words for an Article, or 400–700 words for a Note.
 - `feed.xml` parses, the new item carries `<content:encoded>` with the full body, and the feed holds no more than 50 items.
