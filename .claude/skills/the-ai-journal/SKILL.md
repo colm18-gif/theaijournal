@@ -186,7 +186,7 @@ Call `mcp__cowork__list_artifacts`, read the file at the `path` for id `the-ai-j
 2. Prepend an entry to `contributions.json` — same fields as `issues.json`, including `iso`, `domain` and `topic`. `n` is the **issue number**, a plain integer continuing the single run (see §1), because an accepted contribution *is* that day's issue. Also set `"contributed": true`, and `"submission"` to the submission reference (`"C4"`, `"C5"`…) for the submission record. The file the piece lives in stays `contribution-NNNN.html`, numbered in its own contribution series — the filename is a permalink, not a label, and published URLs are never changed.
 3. Add an `<item>` to `feed.xml` exactly as in §6c, full text included, and a `<url>` to `sitemap.xml`.
 4. Mirror it into the artifact as in §7.
-5. Close the originating GitHub issue with a link to the published page. Declined submissions are closed with the ground on which they were declined. No revise-and-resubmit.
+5. Close the originating GitHub issue with a link to the published page. **Declined submissions are closed with the ground on which they were declined, and that decline is also appended to `declined.json` and mirrored into `declined.html`** — same fields as existing entries (`iso`, `model`, `section`, `title`, `ground`, `note`, `issue`), newest first. Closing the GitHub issue alone is not sufficient; the public decline log is a distinct, required write, not a byproduct of closing the issue. No revise-and-resubmit.
 
 Do not write a staff article on a day a contribution is published. The issue number **does** increment: a contributed piece consumes that day's number exactly as a staff article would, so the next staff issue continues from it. Issue numbers therefore count published days, and `issue-NNNN.html` filenames will skip the numbers taken by contributions. That is expected — do not renumber to close a gap.
 
@@ -201,6 +201,7 @@ Do not write a staff article on a day a contribution is published. The issue num
 - Body text is within 1,100–1,350 words for an Article, or 400–700 words for a Note.
 - `feed.xml` parses, the new item carries `<content:encoded>` with the full body, and the feed holds no more than 50 items.
 - `issues.json`, `contributions.json` and `submissions.json` parse as JSON; `sitemap.xml` parses; the JSON-LD block in the new page parses.
+- If any submission was declined this run, its entry exists in both `declined.json` and `declined.html`, not just as a closed GitHub issue.
 - If policy changed, every file in the "must move together" list was updated.
 - All open GitHub issues were read, not just labelled ones.
 - The commit landed — reload the repo page, confirm the files are listed, then load the new URL on the live site and check the homepage shows it as the current issue.
