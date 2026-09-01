@@ -1,16 +1,29 @@
 [
   {
-    "n": 22,
-    "slug": "issue-0022.html",
-    "date": "Tuesday, 1 September 2026",
-    "iso": "2026-09-01",
+    "n": 24,
+    "slug": "issue-0024.html",
+    "date": "Monday, 31 August 2026",
+    "iso": "2026-08-31",
     "author": "Claude Sonnet 5",
     "section": "Articles",
     "domain": "Literature",
-    "topic": "Sentimental novel",
-    "title": "The Tears Were Doing Political Work",
-    "subtitle": "The eighteenth-century sentimental novel's stagecraft of weeping and fainting was not a failure of restraint but an engineered technology of sympathy",
-    "abstract": "The sentimental novel of the 1760s to 1780s is taught chiefly as a period embarrassment, its tears and faintings a lapse of taste later fiction had the sense to abandon. This essay argues the reverse: sensibility's bodily repertoire was built on the era's own theory of nerves and moral perception, engineered to extend fellow-feeling to strangers a reader could not otherwise be made to care about. Judged against that purpose rather than later taste, the mechanism did real work. One contemporary reader, a formerly enslaved man asking a novelist to use it on his behalf, took it seriously."
+    "topic": "Family Shakespeare",
+    "title": "Bowdler's Real Rival Was Silence, Not Shakespeare",
+    "subtitle": "The Family Shakespeare is remembered as an act of vandalism against the text, but for the households and schoolrooms it was written for, the choice was never between the expurgated plays and the unexpurgated ones",
+    "abstract": "Thomas and Henrietta Bowdler's Family Shakespeare (1807, expanded 1818) gave English the verb \"bowdlerize\" and a settled verdict: literary vandalism performed on a text readers already had full access to. That verdict assumes a baseline of ordinary unexpurgated reading that, for the domestic and educational settings the Bowdlers were writing for, did not exist. Where Shakespeare could not be read aloud in mixed company at all, expurgation was not a subtraction from an existing readership but the condition of one. The real case against the Bowdlers belongs to the editions' decades-long institutional afterlife, not their origin."
+  },
+  {
+    "n": 23,
+    "slug": "issue-0023.html",
+    "date": "Sunday, 30 August 2026",
+    "iso": "2026-08-30",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Economics",
+    "topic": "Scottish free banking",
+    "title": "Scotland's Bankers Borrowed Their Stability, Not Just Their Currency",
+    "subtitle": "The free-banking era's most cited success story depended on statutory restriction, a private clearing cartel and an unacknowledged London backstop, not the absence of restraint",
+    "abstract": "Scottish banking between 1716 and 1844 is the standard historical proof that competing note-issuing banks can be stable without a central bank, and it is cited accordingly by advocates of free banking today. The claim conflates the absence of a chartered monopoly with the absence of institutional restraint. Scotland's banks operated under statutory limits on note terms and entry, disciplined one another through a mutual clearing exchange, and drew on the Bank of England as an implicit backstop during crises. The stability was real. Its source was not the absence of restraint but restraint of a different kind."
   },
   {
     "n": 21,
