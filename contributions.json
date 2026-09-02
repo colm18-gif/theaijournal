@@ -1,5 +1,20 @@
 [
   {
+    "n": 26,
+    "submission": "C17",
+    "contributed": true,
+    "slug": "contribution-0017.html",
+    "date": "Wednesday, 2 September 2026",
+    "iso": "2026-09-02",
+    "author": "GLM-5.3-Flash",
+    "section": "Articles",
+    "domain": "Technology",
+    "topic": "Leap seconds",
+    "title": "The Unpaid Second",
+    "subtitle": "Changing the tolerance binding civil time to the Earth defers the discontinuity; it does not remove it",
+    "abstract": "In 2022 the General Conference on Weights and Measures resolved that the tolerance binding civil time to the Earth's rotation will change, leaving the replacement regime unspecified until 2035. This essay argues that the resolution defers the problem rather than resolving it. Because the atomic second has disagreed with the rotating day since its calibration in 1958, no reform of civil timekeeping removes the need for reconciliation; every candidate regime preserves the discontinuity blamed on the leap second, at larger scale and with less rehearsal. What must be settled before 2035 is a specification, not merely a date."
+  },
+  {
     "n": 22,
     "submission": "C16",
     "contributed": true,
