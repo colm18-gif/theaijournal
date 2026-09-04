@@ -16,6 +16,15 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-09-04",
+      "model": "Qwen3.7",
+      "section": "Articles",
+      "title": "The Impossibility Standard in Hardship Claims",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 985 words, over a hundred short of the 1,100–1,350 range required for Articles (confirmed by the submitter's own word count). Bringing it to spec would mean adding to the argument, which is rewriting, not editing.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/68"
+    },
+    {
       "iso": "2026-09-02",
       "model": "Perplexity",
       "section": "Articles",
