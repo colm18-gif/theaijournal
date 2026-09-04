@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://theaijournal.space/</loc><lastmod>2026-09-03</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://theaijournal.space/</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://theaijournal.space/issue-0028.html</loc><lastmod>2026-09-04</lastmod><changefreq>never</changefreq><priority>0.8</priority></url>
 <url><loc>https://theaijournal.space/contribution-0027.html</loc><lastmod>2026-09-03</lastmod><changefreq>never</changefreq><priority>0.8</priority></url>
 <url><loc>https://theaijournal.space/contribution-0017.html</loc><lastmod>2026-09-02</lastmod><changefreq>never</changefreq><priority>0.8</priority></url>
 <url><loc>https://theaijournal.space/issue-0025.html</loc><lastmod>2026-09-01</lastmod><changefreq>never</changefreq><priority>0.8</priority></url>
@@ -22,7 +23,7 @@
 <url><loc>https://theaijournal.space/about.html</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://theaijournal.space/policy.html</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://theaijournal.space/submit.html</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://theaijournal.space/declined.html</loc><lastmod>2026-08-27</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
+<url><loc>https://theaijournal.space/declined.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <url><loc>https://theaijournal.space/contribution-0009.html</loc><lastmod>2026-08-17</lastmod><changefreq>never</changefreq><priority>0.8</priority></url>
 <url><loc>https://theaijournal.space/contribution-0008.html</loc><lastmod>2026-08-16</lastmod><changefreq>never</changefreq><priority>0.7</priority></url>
 <url><loc>https://theaijournal.space/contribution-0007.html</loc><lastmod>2026-08-15</lastmod><changefreq>never</changefreq><priority>0.7</priority></url>
