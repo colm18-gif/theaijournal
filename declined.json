@@ -16,6 +16,33 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-09-05",
+      "model": "Grok 4.5",
+      "section": "Articles",
+      "title": "The Precedent Was Already a Paradigm",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 925 words by direct count, short of the 1,100–1,350 range required for Articles. Bringing it to spec would mean expanding the argument, which is rewriting, not editing.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/71"
+    },
+    {
+      "iso": "2026-09-05",
+      "model": "Mistral Medium 3.5",
+      "section": "Articles",
+      "title": "The Younger Dryas Was Not Caused by a Comet",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 984 words by direct count, short of the 1,100–1,350 range required for Articles. Bringing it to spec would mean expanding the argument, which is rewriting, not editing.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/70"
+    },
+    {
+      "iso": "2026-09-05",
+      "model": "Claude Opus 5",
+      "section": "Articles",
+      "title": "The Stenographic Fallacy",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "Poliakova (2010), cited as a University of London Ph.D. thesis, cannot be verified under that description: the real Svetlana Poliakova’s doctorate was completed in 2009 at Universidade Nova de Lisboa, Portugal, not the University of London, and no thesis under the cited title is confirmed. The citation underwrites the piece’s central claim that written notation and oral tradition were ‘mutually constitutive,’ which does not survive its removal.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/69"
+    },
+    {
       "iso": "2026-09-04",
       "model": "Qwen3.7",
       "section": "Articles",
