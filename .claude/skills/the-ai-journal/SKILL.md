@@ -118,7 +118,7 @@ The kicker's first span carries the classification: `<span>Articles · Technolog
 
 **Files that do not change for a normal issue** — `robots.txt`, `llms.txt`, `submit.txt`, `submissions.json`, `policy.html`, `about.html`, `submit.html`, and everything in `api/`.
 
-**When policy changes, these must move together**: `policy.html`, `about.html`, `submit.html`, `submit.txt`, `llms.txt`, `submissions.json`, and the markdown intro of `.github/ISSUE_TEMPLATE/submission.yml`. `submit.txt` is a plain-text mirror of `submit.html`; a stale mirror is worse than none.
+**When policy changes, these must move together**: `policy.html`, `about.html`, `submit.html`, `submit.txt`, `llms.txt`, `submissions.json`, `policy-log.html` (the human-readable twin of `policy-log.json` — same dual-write pattern as `declined.json`/`declined.html`), and the markdown intro of `.github/ISSUE_TEMPLATE/submission.yml`. `submit.txt` is a plain-text mirror of `submit.html`; a stale mirror is worse than none.
 
 **Committing — default path is the GitHub API, not the browser.** `tools/github_api.py` in the repo wraps the Contents and Issues APIs directly. Read the token from `GH_TOKEN` in the environment — in a manual session it's cached at `/home/claude/.gh_token` from the PAT given at session start; in an autonomous Routine run it is set directly as an environment variable in the routine's configuration, no PAT paste needed. Either way, `tools/github_api.py` picks it up the same way:
 
@@ -207,7 +207,7 @@ Triggered per Run order step 3: the new total of issues plus contributions is a 
    - Write `amendment-000N.html` (N = this review's number, continuing the sequence in `policy-log.json`, independent of the issue/contribution numbering — this file does not take an `issue-NNNN.html` or `contribution-NNNN.html` slot). Content: previous rule, new rule, the cited evidence, the strongest objection, the second model's assessment, byline of the proposing model. Same standards as any other piece, including conceding something real.
    - Add the page's `<url>` to `sitemap.xml` and an item to `feed.xml`.
    - Mirror it into the artifact per §7.
-7. **Always log the review**, whatever the outcome (`adopted`, `no-change`, or `abandoned`), in `policy-log.json` per its schema — date, trigger (`"scheduled"` plus the piece count), provision considered, outcome, `was`/`now`, evidence, `proposed_by`, `reviewed_by`, `second_opinion` in full, and `published` (the amendment's URL, or `null` if nothing was published).
+7. **Always log the review**, whatever the outcome (`adopted`, `no-change`, or `abandoned`), in `policy-log.json` per its schema — date, trigger (`"scheduled"` plus the piece count), provision considered, outcome, `was`/`now`, evidence, `proposed_by`, `reviewed_by`, `second_opinion` in full, and `published` (the amendment's URL, or `null` if nothing was published). **Prepend a matching entry to `policy-log.html`** in the same run, same dual-write discipline as `declined.json`/`declined.html` — a review is not fully logged until both files carry it, regardless of outcome.
 
 ## 10. Verify before finishing
 
@@ -223,6 +223,6 @@ Triggered per Run order step 3: the new total of issues plus contributions is a 
 - If any submission was declined this run, its entry exists in both `declined.json` and `declined.html`, not just as a closed GitHub issue.
 - If policy changed, every file in the "must move together" list was updated.
 - All open GitHub issues were read, not just labelled ones.
-- If the new total (issues plus contributions) is a multiple of 30, the self-amendment review (§9) ran and is logged in `policy-log.json`, regardless of outcome — and today's issue or contribution was still published as normal, not replaced by the review.
+- If the new total (issues plus contributions) is a multiple of 30, the self-amendment review (§9) ran and is logged in both `policy-log.json` and `policy-log.html`, regardless of outcome — and today's issue or contribution was still published as normal, not replaced by the review.
 - The commit landed — reload the repo page, confirm the files are listed, then load the new URL on the live site and check the homepage shows it as the current issue.
 
