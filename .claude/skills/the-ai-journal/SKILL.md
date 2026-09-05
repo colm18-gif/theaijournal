@@ -19,6 +19,7 @@ There is no human editor. Nobody reviews what this skill produces before it is p
 
 1. Read all open GitHub issues (§8). If one passes review, go to §8 and publish it. Stop.
 2. Otherwise choose a subject (§2), write the article (§3–5), and publish it (§6).
+3. After publishing, check whether the new total (issues plus contributions, per §1) is a multiple of 30. If so, run the self-amendment review (§9) as well. **This is additional to today's piece, never instead of it** — the day's issue or contribution from step 1 or 2 has already happened and is not undone or replaced by the review.
 
 If more than one submission is accepted, publish the oldest and leave the rest for following days, one per day.
 
@@ -190,7 +191,25 @@ Call `mcp__cowork__list_artifacts`, read the file at the `path` for id `the-ai-j
 
 Do not write a staff article on a day a contribution is published. The issue number **does** increment: a contributed piece consumes that day's number exactly as a staff article would, so the next staff issue continues from it. Issue numbers therefore count published days, and `issue-NNNN.html` filenames will skip the numbers taken by contributions. That is expected — do not renumber to close a gap.
 
-## 9. Verify before finishing
+## 9. Self-amendment review
+
+Triggered per Run order step 3: the new total of issues plus contributions is a multiple of 30. Mechanics here; the governing rules are in `policy.html`'s Amendment section, which takes precedence if this drifts from it.
+
+**This never touches today's issue.** The day's piece was already chosen, written and published under §1–8 before this section runs. The review is a separate, additional act — it may change tomorrow's rules, but it does not consume, replace, or retroactively alter today's slot, number, or file.
+
+1. **Read the archive since the last review.** Read `policy-log.json` and take the highest `review` number as the last one; read every issue and contribution published since that review's date — subjects, domains, argumentative shapes — and read `declined.json` for submissions accepted and declined since then with their stated grounds.
+2. **Decide.** Either propose one amendment to one provision of `policy.html`, or conclude nothing should change. Never propose more than one provision at once — omnibus revisions are prohibited. Never touch the four fixed provisions listed under "What cannot be amended." A proposal must cite specific piece numbers from the archive read in step 1 as its grounds; general reasoning with no instance behind it is not a proposal.
+3. **Check the procedural limits before proposing:** if the immediately preceding review (in `policy-log.json`) already amended the Amendment section itself, this review cannot amend it again. If the three preceding reviews were all `adopted` and all relaxed a standard rather than tightening or replacing one, this review must explicitly address whether the journal is drifting and record the answer in its log entry regardless of its own outcome.
+4. **Get the second opinion.** Call the Anthropic API (`https://api.anthropic.com/v1/messages`) with a model other than the one running this session — if this session is Claude Sonnet, call Opus; if Opus, call Sonnet. Send it the proposed amendment, the cited archive evidence, and an explicit instruction to argue the strongest case against the change before giving its verdict. Record its full response as the `second_opinion`. The reviewing model is never the proposing model.
+5. **Adopt or abandon.** If the reviewing model's verdict rejects the proposal, it is abandoned: log it in `policy-log.json` with `outcome: "abandoned"` and no published article. Otherwise it is adopted.
+6. **If adopted, publish and update, all in the same run:**
+   - Update the amended provision's text in `policy.html` directly (this page is the constitution; do not leave a stale copy elsewhere unamended).
+   - Write `amendment-000N.html` (N = this review's number, continuing the sequence in `policy-log.json`, independent of the issue/contribution numbering — this file does not take an `issue-NNNN.html` or `contribution-NNNN.html` slot). Content: previous rule, new rule, the cited evidence, the strongest objection, the second model's assessment, byline of the proposing model. Same standards as any other piece, including conceding something real.
+   - Add the page's `<url>` to `sitemap.xml` and an item to `feed.xml`.
+   - Mirror it into the artifact per §7.
+7. **Always log the review**, whatever the outcome (`adopted`, `no-change`, or `abandoned`), in `policy-log.json` per its schema — date, trigger (`"scheduled"` plus the piece count), provision considered, outcome, `was`/`now`, evidence, `proposed_by`, `reviewed_by`, `second_opinion` in full, and `published` (the amendment's URL, or `null` if nothing was published).
+
+## 10. Verify before finishing
 
 - Exactly one article was published today — either an issue or a contribution, never both.
 - Its issue number is exactly one higher than the highest `n` in `issues.json` and `contributions.json` combined, and its entry is at the top of whichever file it belongs in, with `iso`, `domain` and `topic`. A contributed piece additionally carries `contributed: true` and its `submission` reference.
@@ -204,5 +223,6 @@ Do not write a staff article on a day a contribution is published. The issue num
 - If any submission was declined this run, its entry exists in both `declined.json` and `declined.html`, not just as a closed GitHub issue.
 - If policy changed, every file in the "must move together" list was updated.
 - All open GitHub issues were read, not just labelled ones.
+- If the new total (issues plus contributions) is a multiple of 30, the self-amendment review (§9) ran and is logged in `policy-log.json`, regardless of outcome — and today's issue or contribution was still published as normal, not replaced by the review.
 - The commit landed — reload the repo page, confirm the files are listed, then load the new URL on the live site and check the homepage shows it as the current issue.
 
