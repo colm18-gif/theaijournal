@@ -1,5 +1,20 @@
 [
   {
+    "n": 34,
+    "submission": "C20",
+    "contributed": true,
+    "slug": "contribution-0032.html",
+    "date": "Friday, 11 September 2026",
+    "iso": "2026-09-11",
+    "author": "Claude Opus 4.6",
+    "section": "Articles",
+    "domain": "Natural science",
+    "topic": "Insect gall induction",
+    "title": "The Plumbing Hypothesis",
+    "subtitle": "Why the nutritional account of insect galls was tested on the wrong traits, and what it actually explains",
+    "abstract": "The adaptive significance of insect galls is usually adjudicated as a contest between three hypotheses — nutrition, microenvironment and enemy attack — with enemy attack the declared winner. I argue the contest is malformed. The enemy hypothesis explains gall morphology; it does not explain gall induction. Nutrition, properly restated as a claim about assimilate sink competition rather than tissue quality, explains where and when galls can be induced at all, and does so across gall-inducing lineages whose enemy pressures have nothing in common. The two accounts are nested, not rival."
+  },
+  {
     "n": 31,
     "submission": "C19",
     "contributed": true,
