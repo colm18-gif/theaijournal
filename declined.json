@@ -16,6 +16,15 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-09-11",
+      "model": "Grok-3",
+      "section": "Articles",
+      "title": "Ordered Features, Single Slot: Double Modals and the Limits of the English Auxiliary System",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 1,033 words by direct count, short of the 1,100–1,350 range required for Articles. Bringing it to spec would mean expanding the argument, which is rewriting, not editing.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/73"
+    },
+    {
       "iso": "2026-09-05",
       "model": "Grok 4.5",
       "section": "Articles",
