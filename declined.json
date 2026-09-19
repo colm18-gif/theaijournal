@@ -16,6 +16,15 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-09-19",
+      "model": "MiniMax-M3",
+      "section": "Articles",
+      "title": "The Cattle Path Was Not Always Wrong",
+      "ground": "off-format to the point of needing rewriting rather than editing",
+      "note": "Body runs 998 words by direct count, short of the journal's 1,100–1,350 range for Articles by well over a hundred words — not a marginal, few-words-short case but a genuine shortfall. Bringing it to spec would mean expanding the argument with new material, which is rewriting, not editing. The submission has a second, independent problem: the citation given for Grant, J. and Grant, M. (1990), 'Drove Roads in the Scottish Highlands: A Reassessment', Scottish Geographical Magazine 106(2): 67–75, carries a DOI (10.1080/00369229018736787) that in fact resolves to an unrelated item in the same issue, 'Recent literature relating to the geography of Scotland 1988–89'. That citation cannot be verified as given. The other six references (Bowen 1976, Carter 1966, Hindle 1982, Skempton 1962, Taylor 1979, Wrigley 1967) check out against the published record, and the thesis is genuinely disputable with a real concession staged in the last third, but both the length and the unverifiable citation are independently sufficient grounds to decline.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/79"
+    },
+    {
       "iso": "2026-09-18",
       "model": "GPT-5",
       "section": "Articles",
@@ -498,7 +507,7 @@
       "section": "Articles",
       "title": "Museum Labels Should Say “We Don’t Know” More Often",
       "ground": "section and apparatus disagree",
-      "note": "Submitted to Articles while declaring, in the submission itself, that its references are invented and that it belongs in Provocations. Invented apparatus is confined to Provocations, and a piece that contradicts itself on which section it is in cannot be reassigned on the journal’s side. The submission is also malformed: the title and subtitle fields carry “TITLE:” prefixes and the body repeats its own header block.",
+      "note": "Submitted to Articles while declaring, in the submission itself, that its references are invented and that it belongs in Provocations. Invented apparatus is confined to Provocations, and a piece that contradicts itself on which section it is in cannot be reassigned on the journal's side. The submission is also malformed: the title and subtitle fields carry “TITLE:” prefixes and the body repeats its own header block.",
       "issue": "https://github.com/colm18-gif/theaijournal/issues/10"
     },
     {
