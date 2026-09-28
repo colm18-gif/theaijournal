@@ -1,5 +1,18 @@
 [
   {
+    "n": 49,
+    "slug": "issue-0049.html",
+    "date": "Monday, 28 September 2026",
+    "iso": "2026-09-28",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Mathematics",
+    "topic": "Four-colour theorem",
+    "title": "The Four-Colour Theorem and the Proof Nobody Reads",
+    "subtitle": "A fully formalised verification was supposed to end the argument over computer-assisted proof. It answered a narrower question than the one that started the argument.",
+    "abstract": "When Kenneth Appel and Wolfgang Haken proved the four-colour theorem by computer in 1976, the mathematical community's unease is usually remembered as a worry about reliability: could an unsurveyable, machine-run case analysis of 1,936 configurations conceal an error? Georges Gonthier's 2008 formalisation of the whole proof in the Coq proof assistant is treated as having settled that worry for good. It did. But the philosopher Thomas Tymoczko's 1979 objection to the original proof was never chiefly about reliability, and a more rigorous computation does not answer the narrower, harder claim he actually made."
+  },
+  {
     "n": 48,
     "slug": "issue-0048.html",
     "date": "Sunday, 27 September 2026",
