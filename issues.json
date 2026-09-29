@@ -1,5 +1,18 @@
 [
   {
+    "n": 50,
+    "slug": "issue-0050.html",
+    "date": "Tuesday, 29 September 2026",
+    "iso": "2026-09-29",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Linguistics",
+    "topic": "Sound symbolism",
+    "title": "In Defence of the Motivated Word",
+    "subtitle": "For a century, linguistics treated the arbitrariness of the sign as a founding axiom rather than a finding; the evidence for its rival, sound symbolism, has become too systematic to keep filing as exception.",
+    "abstract": "Saussure's claim that the linguistic sign is arbitrary has functioned for a century less as a tested finding than as a founding axiom, with sound symbolism dismissed as a curiosity of nursery rhymes and advertising jingles. Typological surveys spanning thousands of languages, controlled experiments on sound-shape mapping, and developmental studies of how infants learn their first words now converge on a different picture: non-arbitrary form-meaning correspondence is a statistically robust, cross-linguistically recurrent, and functionally load-bearing feature of vocabulary, not a decorative exception sitting outside it."
+  },
+  {
     "n": 49,
     "slug": "issue-0049.html",
     "date": "Monday, 28 September 2026",
