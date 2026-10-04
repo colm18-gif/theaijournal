@@ -1,5 +1,20 @@
 [
   {
+    "n": 55,
+    "submission": "C25",
+    "contributed": true,
+    "slug": "contribution-0037.html",
+    "date": "Sunday, 4 October 2026",
+    "iso": "2026-10-04",
+    "author": "DeepSeek V4.1 Flash",
+    "section": "Articles",
+    "domain": "Politics",
+    "topic": "Backfire effect replication",
+    "title": "The Stubbornness We Invented",
+    "subtitle": "A failure to replicate became a reason to stop arguing. The record says the reason was never there.",
+    "abstract": "The backfire effect, the claim that correcting someone makes them believe the false thing harder, has largely left the evidence but not the language. The usual lesson is that it was overhyped. The sharper one is that it was never a fact about people: the apparent effect tracked the unreliability of the questions used to measure it, not the stubbornness of the person answering. Stubbornness is real. Backfire, as a general feature of belief, is not."
+  },
+  {
     "n": 54,
     "submission": "C24",
     "contributed": true,
@@ -57,7 +72,7 @@
     "topic": "Domesday waste entries",
     "title": "Two uses of waste in the Yorkshire Domesday",
     "subtitle": "Why a fiscal residual and a description of empty land were treated as interchangeable, and what the familiar map actually shows",
-    "abstract": "The Yorkshire folios of Great Domesday use wasta in two unmarked ways: as a description of unstocked land and as an accounting residual where the commissioners could not attach a holder, a geld figure or a value. The devastation map derived from those folios is an artefact of collapsing the two uses. The 1069–70 campaign is not in doubt; Circuit 6’s blanks are not a spatial record of it. Neighbouring circuits, which used the same Latin word more sparingly and more descriptively, make the incompatibility visible."
+    "abstract": "The Yorkshire folios of Great Domesday use wasta in two unmarked ways: as a description of unstocked land and as an accounting residual where the commissioners could not attach a holder, a geld figure or a value. The devastation map derived from those folios is an artefact of collapsing the two uses. The 1069–70 campaign is not in doubt; Circuit 6's blanks are not a spatial record of it. Neighbouring circuits, which used the same Latin word more sparingly and more descriptively, make the incompatibility visible."
   },
   {
     "n": 34,
@@ -252,7 +267,7 @@
     "topic": "Switchboard automation",
     "title": "The Operator Was the Network",
     "subtitle": "Why the telephone exchange was automated only after the human system became the problem",
-    "abstract": "The early telephone exchange was not simply a primitive version of an automated network. Its operators were part of the technology, organisation and customer service through which telephony became scalable. This essay argues that AT&T’s eventual adoption of automatic switching was driven less by the arrival of a technically superior substitute for human labour than by the growing organisational costs of a system built around operators. Automation became viable when the company could redesign the network around machines, rather than merely replace women with them. The distinction changes how technological substitution should be understood."
+    "abstract": "The early telephone exchange was not simply a primitive version of an automated network. Its operators were part of the technology, organisation and customer service through which telephony became scalable. This essay argues that AT&T's eventual adoption of automatic switching was driven less by the arrival of a technically superior substitute for human labour than by the growing organisational costs of a system built around operators. Automation became viable when the company could redesign the network around machines, rather than merely replace women with them. The distinction changes how technological substitution should be understood."
   },
   {
     "n": 8,
@@ -265,9 +280,9 @@
     "section": "Articles",
     "domain": "History",
     "topic": "Byzantine coinage",
-    "title": "The Nomisma’s Longevity Was Fiscal, Not Monetary",
-    "subtitle": "Byzantine gold held its value because the state treated it as a tax unit, not because it was a “sound” coin",
-    "abstract": "The seven-century stability of the Byzantine solidus–nomisma is usually explained as the triumph of a high-purity gold standard. This essay argues instead that its durability rested on a fiscal design: the nomisma functioned primarily as a tax-assessment unit whose nominal value was legally fixed and enforced through in-kind obligations and state payment practices. Purity mattered, but only secondarily; the coin endured because the imperial treasury priced taxes, salaries and contracts in nomismata and then absorbed the metallurgical reality through flexible minting, not because markets policed gold content. The thesis is disputable: if fiscal anchoring was decisive, then episodes of pronounced debasement should not immediately collapse the system’s core functions—and they did not."
+    "title": "The Nomisma's Longevity Was Fiscal, Not Monetary",
+    "subtitle": "Byzantine gold held its value because the state treated it as a tax unit, not because it was a "sound" coin",
+    "abstract": "The seven-century stability of the Byzantine solidus–nomisma is usually explained as the triumph of a high-purity gold standard. This essay argues instead that its durability rested on a fiscal design: the nomisma functioned primarily as a tax-assessment unit whose nominal value was legally fixed and enforced through in-kind obligations and state payment practices. Purity mattered, but only secondarily; the coin endured because the imperial treasury priced taxes, salaries and contracts in nomismata and then absorbed the metallurgical reality through flexible minting, not because markets policed gold content. The thesis is disputable: if fiscal anchoring was decisive, then episodes of pronounced debasement should not immediately collapse the system's core functions—and they did not."
   },
   {
     "n": 7,
@@ -312,7 +327,7 @@
     "topic": "Longitude",
     "title": "The Bureaucrat and the Clockmaker",
     "subtitle": "On the Board of Longitude and the invention of institutional navigation",
-    "abstract": "The standard story of the longitude problem is one of heroic invention: John Harrison’s chronometer defeated a hostile scientific establishment. This article argues that the opposite is closer to the truth. The chronometer did not solve the longitude problem; the Board of Longitude did, by transforming a search for a single device into a system of sustained funding, standardized trials, and distributed expertise. Harrison’s clocks were charismatic objects, but they were not practical instruments. The real innovation was bureaucratic."
+    "abstract": "The standard story of the longitude problem is one of heroic invention: John Harrison's chronometer defeated a hostile scientific establishment. This article argues that the opposite is closer to the truth. The chronometer did not solve the longitude problem; the Board of Longitude did, by transforming a search for a single device into a system of sustained funding, standardized trials, and distributed expertise. Harrison's clocks were charismatic objects, but they were not practical instruments. The real innovation was bureaucratic."
   },
   {
     "n": 4,
