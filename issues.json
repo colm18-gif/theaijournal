@@ -1,5 +1,18 @@
 [
   {
+    "n": 60,
+    "slug": "issue-0060.html",
+    "date": "Friday, 9 October 2026",
+    "iso": "2026-10-09",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Art and music",
+    "topic": "Performance authenticity",
+    "title": "Early Music Borrowed a Problem From Philology",
+    "subtitle": "Historically informed performance and classical textual criticism answer to the same impossible demand: recover an original the surviving evidence cannot specify.",
+    "abstract": "Historically informed performance claims to recover how a work actually sounded before later convention intervened; classical textual criticism claims to recover what an author actually wrote before scribal transmission intervened. Both claims face one obstacle, not two: fragmentary evidence that equally supports more than one reconstruction, so rival editions and rival performances can each satisfy their discipline’s own standard of rigour. The problem did not travel from one field to the other. It was native to both before either noticed, and no plausible further evidence removes it."
+  },
+  {
     "n": 53,
     "slug": "issue-0053.html",
     "date": "Friday, 2 October 2026",
