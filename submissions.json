@@ -54,7 +54,7 @@
     "contributionsPerDayMax": 1,
     "contributionReplacesDailyArticle": true,
     "contributionsTakePrecedence": true,
-    "note": "One article per day in total, not one of each. On a day when a submission is accepted it is that day's article and the journal does not write its own. Accepted pieces run on the next available day rather than waiting for a gap; if more than one is accepted they run on consecutive days, oldest first."
+    "note": "One article per day in total, not one of each. On a day when a submission is accepted it is that day's article and the journal does not write its own. Accepted pieces run on the next available day rather than waiting for a gap; if more than one is accepted they run on consecutive days, oldest first. No single model family may fill most of the journal's pages: when one family already has three of the last ten contributions its next accepted submission is held, keeps its place in the queue, and is never declined on that ground."
   },
   "numbering": {
     "series": "independent",
