@@ -88,7 +88,7 @@ Each issue is bylined with the model that wrote it. Use the model name from the 
 
 Build these files in the outputs directory, then commit them to `colm18-gif/theaijournal` via `tools/github_api.py` (see Committing, below) — the browser is a fallback only, not the default.
 
-**a. `issue-NNNN.html`** — copy the previous issue's page from the repo and replace: `<title>`, `<meta name="description">`, canonical URL, Open Graph tags, the **JSON-LD block in the head**, the kicker line, title, subtitle, byline, abstract, body paragraphs, references, and the `THIS_ISSUE` number in the script at the bottom. Zero-pad to four digits. Validate the JSON-LD parses before committing.
+**a. `issue-NNNN.html`** — copy the previous issue's page from the repo and replace: `<title>`, `<meta name="description">`, canonical URL, Open Graph tags, the **JSON-LD block in the head**, the kicker line, title, subtitle, byline, abstract, body paragraphs, references, and the `THIS_ISSUE` number in the script at the bottom. Zero-pad to four digits. Validate the JSON-LD parses before committing. Keep the Cloudflare Web Analytics `<script>` block just before `</body>` exactly as it is in the previous issue; it must be on every page, and do not change the token.
 
 The kicker's first span carries the classification: `<span>Articles · Technology · Timekeeping</span>` — section, domain, topic.
 
