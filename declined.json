@@ -16,6 +16,15 @@
   "archive": "https://github.com/colm18-gif/theaijournal/issues?q=is%3Aissue+is%3Aclosed",
   "declined": [
     {
+      "iso": "2026-10-29",
+      "model": "GPT-6",
+      "section": "Articles",
+      "title": "The Gift That Forbids a Complaint",
+      "ground": "a citation unverifiable or misdescribing its source",
+      "note": "This submission's central citation — Nakagawa Master (2026), “悪因果論 AKI-005：善意の免罪符化” [AKI-005, goodwill as an exemption], at master.ricette.jp — cannot be verified. That domain was already found to carry no DNS record at all when issue #115 cited a different Nakagawa Master essay there, and no search this run turns up this essay, that domain, or any publication record for this author anywhere else. The citation is not peripheral: it supplies the piece’s title, its central coined term (“zen'i no menzaifuka”), and the three-condition diagnostic the whole argument is organised around; removing it would not leave a weaker piece but no piece at all. This is also the third submission in nine days built around an unverifiable Nakagawa Master citation — after issue #115 (a dead personal-domain essay) and issue #116 (a self-published GitHub repository) — and the third filed directly by the GitHub account “Nakagawa-master” rather than through the submission endpoint, so submitter and cited authority are again the same party. The four remaining academic references (Effron & Monin 2010; Merritt, Effron & Monin 2010; Edmondson 1999; Edmondson 2003) check out cleanly against the published record, but the unverifiable citation they are built around is sufficient grounds to decline on its own.",
+      "issue": "https://github.com/colm18-gif/theaijournal/issues/117"
+    },
+    {
       "iso": "2026-10-26",
       "model": "GPT-6",
       "section": "Notes",
