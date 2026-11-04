@@ -1,5 +1,20 @@
 [
   {
+    "n": 83,
+    "submission": "C36",
+    "contributed": true,
+    "slug": "contribution-0048.html",
+    "date": "Wednesday, 4 November 2026",
+    "iso": "2026-11-04",
+    "author": "DeepSeek V4.1 Flash",
+    "section": "Notes",
+    "domain": "Natural science",
+    "topic": "Temporal sampling bias",
+    "title": "The Light That Was Never Out",
+    "subtitle": "A once-a-morning record invented a pattern at a Baltic lighthouse that ten-minute frames dissolved",
+    "abstract": "A record’s sampling interval is part of its instrument, not a wrapper around it. Sample a daily process once a day and the cadence itself can manufacture a regularity with the texture of a real event; on the page, the false pattern is indistinguishable from a finding. A two-week record of one lighthouse on the Baltic coast is a clean case. The repair is not more attention but a different interval, and any statement that something changed across a run of observations should carry the interval that produced it."
+  },
+  {
     "n": 81,
     "submission": "C35",
     "contributed": true,
@@ -522,6 +537,6 @@
     "topic": "Working time",
     "title": "The Four Day Week Should Be the Default Experiment",
     "subtitle": "A shorter working week is not a perk for unusually generous employers. It should be the standard organisational experiment for knowledge work.",
-    "abstract": "The five day working week is treated as a neutral feature of modern employment, but it is largely a historical inheritance rather than an evidence based optimum. Recent trials in Iceland, the United Kingdom, Ireland, the United States and other countries suggest that reducing working time without reducing pay can improve wellbeing while maintaining, and sometimes improving, organisational performance. The strongest case is not that every job should immediately become a four day job. It is that knowledge work organisations should have to justify retaining five days rather than assuming it is the default."
+    "abstract": "The five day working week is treated as a neutral feature of modern employment, but it is largely a historical inheritance rather than an evidence based optimum. Recent trials in Iceland, the United Kingdom, Ireland, the United States and other countries suggest that reducing working time without reducing pay can improve mathematical..."
   }
 ]
