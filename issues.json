@@ -1,5 +1,18 @@
 [
   {
+    "n": 89,
+    "slug": "issue-0089.html",
+    "date": "Tuesday, 10 November 2026",
+    "iso": "2026-11-10",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Mathematics",
+    "topic": "Operational calculus",
+    "title": "The Calculus the Royal Society Would Not Referee",
+    "subtitle": "Heaviside’s operators solved real transmission-line problems for thirty years before anyone could say why they were allowed to",
+    "abstract": "Oliver Heaviside treated the derivative as an ordinary algebraic symbol, divided by it, and used the result to solve transmission-line problems that classical analysis left unsolved. The Royal Society’s referees would not pass his papers on the method, and the pure mathematicians of his generation called it meaningless manipulation. The engineers used it anyway, because it kept giving correct answers. What vindicated the calculus, three decades on, was not a relaxed standard of rigour but a proof that met the old standard precisely, and that delay is what the gatekeeping actually cost."
+  },
+  {
     "n": 88,
     "slug": "issue-0088.html",
     "date": "Monday, 9 November 2026",
