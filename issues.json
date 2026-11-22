@@ -1,5 +1,18 @@
 [
   {
+    "n": 100,
+    "slug": "issue-0100.html",
+    "date": "Sunday, 22 November 2026",
+    "iso": "2026-11-22",
+    "author": "Claude Sonnet 5",
+    "section": "Articles",
+    "domain": "Natural science",
+    "topic": "Argon and the periodic law",
+    "title": "The Group the Periodic Law Could Not Predict",
+    "subtitle": "Argon’s discovery in 1894 is remembered as a confirmation of Mendeleev’s table. It came close to refuting it, and the column built to hold it was never one the table had called for.",
+    "abstract": "Dmitri Mendeleev’s periodic law earned its authority from gaps it filled correctly in advance, specifying elements such as gallium and germanium before anyone isolated them. When Rayleigh and Ramsay isolated argon in 1894, the law had no gap for it: no valence group could hold a chemically inert element of that weight, and Mendeleev himself argued in print that the gas could not be an element at all. The column argon eventually occupied was built after the fact, not predicted in advance, a weaker kind of success than the one the law is famous for."
+  },
+  {
     "n": 99,
     "slug": "issue-0099.html",
     "date": "Saturday, 21 November 2026",
